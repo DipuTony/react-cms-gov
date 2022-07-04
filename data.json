@@ -77,6 +77,12 @@
       "news": "<p>sd</p>",
       "date": "4th July 2022",
       "id": 13
+    },
+    {
+      "header": "My Image",
+      "news": "<p>this is image..</p><p><img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/90px-Emblem_of_India.svg.png\" alt=\"\" width=\"300px\" style=\"display: block; margin-left: auto; margin-right: auto;\">jjj<br></p>",
+      "date": "4th July 2022",
+      "id": 14
     }
   ]
 }
