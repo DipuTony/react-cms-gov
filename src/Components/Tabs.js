@@ -6,6 +6,8 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import AddNews from './News/AddNews';
 import ManageNews from './News/ManageNews';
+import FetchData from './News/FetchData';
+import Fetch2 from './News/Fetch2';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -67,6 +69,8 @@ export default function BasicTabs() {
       </TabPanel>
       <TabPanel value={value} index={2}>
         May be used in Future..
+        {/* <FetchData /> */}
+        <Fetch2 />
       </TabPanel>
     </Box>
     </>
