@@ -7,6 +7,8 @@ const config = {
 export default function TextEditor({ initialValue, getValue }) {
     const editor = useRef(null);
 
+    console.log("I Want this ",getValue)
+
     return (
         <div>
             <JoditEditor
@@ -24,5 +26,5 @@ export default function TextEditor({ initialValue, getValue }) {
 
 /*
 Export To -
-1. AddNews.js
+NOt Used
 */

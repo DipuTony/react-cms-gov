@@ -41,6 +41,42 @@
       "news": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo error modi delectus rerum qui explicabo ipsa quam. Fuga voluptas nostrum nobis quam vero accusantium expedita aspernatur corrupti officia doloremque odio delectus ratione, facilis nam, esse molestias quo? Accusantium consectetur odio magni optio minus, officia deserunt voluptatem saepe possimus cupiditate!",
       "date": "19/03/2022",
       "id": 7
+    },
+    {
+      "header": "dfg",
+      "news": "<p>f</p>",
+      "date": "22/07/2022",
+      "id": 8
+    },
+    {
+      "header": "12",
+      "news": "<p>e</p>",
+      "date": "Today is a Monday",
+      "id": 9
+    },
+    {
+      "header": "fgh",
+      "news": "<p>g</p>",
+      "date": "07/04/2022",
+      "id": 10
+    },
+    {
+      "header": "dfg",
+      "news": "<p>df</p>",
+      "date": "4th July 2022",
+      "id": 11
+    },
+    {
+      "header": "sdf",
+      "news": "<p>sd</p>",
+      "date": "4th July 2022",
+      "id": 12
+    },
+    {
+      "header": "sdf",
+      "news": "<p>sd</p>",
+      "date": "4th July 2022",
+      "id": 13
     }
   ]
 }

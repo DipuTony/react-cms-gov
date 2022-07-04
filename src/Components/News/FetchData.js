@@ -39,5 +39,5 @@ function Example() {
 
 /*
 Export To - 
-1. ManageNews.js
+Not Used
 */

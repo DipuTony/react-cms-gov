@@ -372,5 +372,5 @@ export default function EnhancedTable() {
 
 /*
 Export To -
-1. SideDrawer.js
+1. Tabls.js - but not real use
 */

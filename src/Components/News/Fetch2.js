@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react'
 import { DataGrid } from '@mui/x-data-grid'
 
 const columns = [
-  { field: 'id', headerName: 'ID' },
-  { field: 'header', headerName: 'Title', width: 300 },
-  { field: 'news', headerName: 'Body', width: 600 }
+  { field: 'id', headerName: 'ID', width:30 },
+  { field: 'header', headerName: 'Title', width: 200 },
+  { field: 'news', headerName: 'Body', width: 570 },
+  { field: 'date', headerName: 'Added Date', width: 120 }
 ]
 
 const DataTable = () => {
@@ -15,7 +16,7 @@ const DataTable = () => {
   const [deletedRows, setDeletedRows] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/news")
+    fetch("http://localhost:8000/news/")
       .then((data) => data.json())
       .then((data) => setTableData(data))
 
@@ -28,7 +29,7 @@ const DataTable = () => {
       <DataGrid
         rows={tableData}
         columns={columns}
-        pageSize={12}
+        pageSize={5}
         checkboxSelection
         onSelectionModelChange={({ selectionModel }) => {
           const rowIds = selectionModel.map(rowId => parseInt(String(rowId), 10));
@@ -42,3 +43,8 @@ const DataTable = () => {
 }
 
 export default DataTable
+
+/*
+Export to -
+1. Tabs.js
+*/

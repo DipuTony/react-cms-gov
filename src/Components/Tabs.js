@@ -52,7 +52,7 @@ export default function BasicTabs() {
   };
 
   return (
-    <>
+    <div component={'span'} variant={'body2'}>
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
@@ -64,16 +64,15 @@ export default function BasicTabs() {
       <TabPanel value={value} index={0}>
         <AddNews />  
       </TabPanel>
-      <TabPanel value={value} index={1}>
-        <ManageNews />
+      <TabPanel value={value} index={1}>        
+        <Fetch2 />
       </TabPanel>
       <TabPanel value={value} index={2}>
         May be used in Future..
-        {/* <FetchData /> */}
-        <Fetch2 />
+        <ManageNews />
       </TabPanel>
     </Box>
-    </>
+    </div>
   );
 }
 
