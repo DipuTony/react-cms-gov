@@ -48,9 +48,11 @@ function WorkflowList({ title }) {
             )
         }
     ]
+
         const { isLoading, data, isError, error } = useQuery("first-query", () => {
             return axios.get(`http://localhost:8000/${title}`);
         });
+
 
 
     const deleteHandle = (e) => {

@@ -41,10 +41,47 @@
   ],
   "announcement": [
     {
+<<<<<<< HEAD
       "header": "My First Announcement",
       "news": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo error modi delectus rerum qui explicabo delectus ratione, facilis nam, esse molestias quo? Accusantium consectetur odio magni optio minus, officia deserunt voluptatem saepe possimus cupiditate!",
       "date": "19/02/2021",
       "id": 1
+=======
+      "header": "12",
+      "news": "<p>e</p>",
+      "date": "Today is a Monday",
+      "id": 9
+    },
+    {
+      "header": "fgh",
+      "news": "<p>g</p>",
+      "date": "07/04/2022",
+      "id": 10
+    },
+    {
+      "header": "dfg",
+      "news": "<p>df</p>",
+      "date": "4th July 2022",
+      "id": 11
+    },
+    {
+      "header": "sdf",
+      "news": "<p>sd</p>",
+      "date": "4th July 2022",
+      "id": 12
+    },
+    {
+      "header": "sdf",
+      "news": "<p>sd</p>",
+      "date": "4th July 2022",
+      "id": 13
+    },
+    {
+      "header": "My Image",
+      "news": "<p>this is image..</p><p><img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/90px-Emblem_of_India.svg.png\" alt=\"\" width=\"300px\" style=\"display: block; margin-left: auto; margin-right: auto;\">jjj<br></p>",
+      "date": "4th July 2022",
+      "id": 14
+>>>>>>> 1363a7fe9d024ef7fe6dfef9fa60234a2d12cf7f
     }
   ]
 }
