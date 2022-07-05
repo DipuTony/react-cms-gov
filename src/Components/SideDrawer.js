@@ -14,40 +14,68 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import Tab from './Tabs'
+import {
+  BrowserRouter as Router,
+  Link
+} from "react-router-dom"
 
 const drawerWidth = 240;
 
-export default function PermanentDrawerLeft() {
+export default function PermanentDrawerLeft({title}) {
+
+  const itemsList = [
+    {
+      text: "Home",
+      icon: <MailIcon />,
+      to: "/" // <-- add link targets
+    },
+    {
+      text: "EventMaster",
+      icon: <MailIcon />,
+      to: "/EventMaster" // <-- add link targets
+    },
+    {
+      text: "News Master",
+      icon: <InboxIcon />,
+      to: "/NewsMaster"
+    },
+    {
+      text: "Announcement",
+      icon: <InboxIcon />,
+      to: "/AnnouncementMaster"
+    }
+  ];
+
   return (
     <>
-    <Box sx={{ display: 'flex' }}>
-      <CssBaseline />
-      <AppBar
-        position="fixed"
-        sx={{ width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` }}
-      >
-        <Toolbar>
-          <Typography variant="h6" noWrap component="div">
-            News Master
-          </Typography>
-        </Toolbar>
-      </AppBar>
-      <Drawer
-        sx={{
-          width: drawerWidth,
-          flexShrink: 0,
-          '& .MuiDrawer-paper': {
+      <Box sx={{ display: 'flex' }}>
+        <CssBaseline />
+        <AppBar
+          position="fixed"
+          sx={{ width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` }}
+        >
+          <Toolbar>
+            <Typography variant="h6" noWrap component="div">
+              {title}
+            </Typography>
+          </Toolbar>
+        </AppBar>
+        <Drawer
+          sx={{
             width: drawerWidth,
-            boxSizing: 'border-box',
-          },
-        }}
-        variant="permanent"
-        anchor="left"
-      >
-        <Toolbar />
-        <Divider />
-        <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+            flexShrink: 0,
+            '& .MuiDrawer-paper': {
+              width: drawerWidth,
+              boxSizing: 'border-box',
+            },
+          }}
+          variant="permanent"
+          anchor="left"
+        >
+          <Toolbar />
+          <Divider />
+          {/* <List>
+          {['News Master', 'Event Master', 'Send email', 'Drafts'].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -57,9 +85,23 @@ export default function PermanentDrawerLeft() {
               </ListItemButton>
             </ListItem>
           ))}
-        </List>
-        <Divider />
-        <List>
+        </List> */}
+          <Divider />
+          <List>
+            {itemsList.map((item, index) => {
+              const { text, icon } = item;
+              return (
+                <ListItem component={Link} to={item.to} key={text}>
+                  <ListItemButton>
+                    {icon && <ListItemIcon>{icon}</ListItemIcon>}
+                    <ListItemText primary={text} />
+                  </ListItemButton>
+                </ListItem>
+              );
+            })}
+          </List>
+          <Divider />
+          {/* <List>
           {['All mail', 'Trash', 'Spam'].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
@@ -70,18 +112,18 @@ export default function PermanentDrawerLeft() {
               </ListItemButton>
             </ListItem>
           ))}
-        </List>
-      </Drawer>
-      <Box
-        component="main"
-        sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
-      >
-        <Toolbar />
-        <Typography paragraph>
-          <Tab />
-        </Typography>
+        </List> */}
+        </Drawer>
+        <Box
+          component="main"
+          sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
+        >
+          <Toolbar />
+          <Typography paragraph>
+            {/* <Tab /> */}
+          </Typography>
+        </Box>
       </Box>
-    </Box>
     </>
   );
 }

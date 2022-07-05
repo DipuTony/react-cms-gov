@@ -1,18 +1,6 @@
 {
   "news": [
     {
-      "header": "This is My News",
-      "news": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo error modi delectus rerum qui explicabo ipsa quam. Fuga voluptas nostrum nobis quam vero accusantium expedita aspernatur corrupti officia doloremque odio delectus ratione, facilis nam, esse molestias quo? Accusantium consectetur odio magni optio minus, officia deserunt voluptatem saepe possimus cupiditate!",
-      "date": "07/04/2022",
-      "id": 1
-    },
-    {
-      "header": "Ranchi is My News",
-      "news": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo error modi delectus rerum qui explicabo ipsa quam. Fuga voluptas nostrum nobis quam vero accusantium expedita aspernatur corrupti officia doloremque odio delectus ratione, facilis nam, esse molestias quo? Accusantium consectetur odio magni optio minus, officia deserunt voluptatem saepe possimus cupiditate!",
-      "date": "09/04/2022",
-      "id": 2
-    },
-    {
       "header": "Patna News",
       "news": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo error modi delectus rerum qui explicabo ipsa quam. Fuga voluptas nostrum nobis quam vero accusantium expedita aspernatur corrupti officia doloremque odio delectus ratione, facilis nam, esse molestias quo? Accusantium consectetur odio magni optio minus, officia deserunt voluptatem saepe possimus cupiditate!",
       "date": "09/04/2022",
@@ -31,52 +19,32 @@
       "id": 5
     },
     {
-      "header": "Latest Update",
-      "news": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo error modi delectus rerum qui explicabo ipsa quam. Fuga voluptas nostrum nobis quam vero accusantium expedita aspernatur corrupti officia doloremque odio delectus ratione, facilis nam, esse molestias quo? Accusantium consectetur odio magni optio minus, officia deserunt voluptatem saepe possimus cupiditate!",
-      "date": "19/02/2022",
-      "id": 6
-    },
+      "header": "fgh",
+      "news": "<p>g</p>",
+      "date": "07/04/2022",
+      "id": 10
+    }
+  ],
+  "event": [
     {
-      "header": "This is My News",
-      "news": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo error modi delectus rerum qui explicabo ipsa quam. Fuga voluptas nostrum nobis quam vero accusantium expedita aspernatur corrupti officia doloremque odio delectus ratione, facilis nam, esse molestias quo? Accusantium consectetur odio magni optio minus, officia deserunt voluptatem saepe possimus cupiditate!",
-      "date": "19/03/2022",
-      "id": 7
+      "header": "My First Event",
+      "news": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo error modi delectus rerum qui explicabo delectus ratione, facilis nam, esse molestias quo? Accusantium consectetur odio magni optio minus, officia deserunt voluptatem saepe possimus cupiditate!",
+      "date": "09/04/2022",
+      "id": 3
     },
     {
       "header": "dfg",
       "news": "<p>f</p>",
       "date": "22/07/2022",
       "id": 8
-    },
+    }
+  ],
+  "announcement": [
     {
-      "header": "12",
-      "news": "<p>e</p>",
-      "date": "Today is a Monday",
-      "id": 9
-    },
-    {
-      "header": "fgh",
-      "news": "<p>g</p>",
-      "date": "07/04/2022",
-      "id": 10
-    },
-    {
-      "header": "dfg",
-      "news": "<p>df</p>",
-      "date": "4th July 2022",
-      "id": 11
-    },
-    {
-      "header": "sdf",
-      "news": "<p>sd</p>",
-      "date": "4th July 2022",
-      "id": 12
-    },
-    {
-      "header": "sdf",
-      "news": "<p>sd</p>",
-      "date": "4th July 2022",
-      "id": 13
+      "header": "My First Announcement",
+      "news": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo error modi delectus rerum qui explicabo delectus ratione, facilis nam, esse molestias quo? Accusantium consectetur odio magni optio minus, officia deserunt voluptatem saepe possimus cupiditate!",
+      "date": "19/02/2021",
+      "id": 1
     }
   ]
 }
