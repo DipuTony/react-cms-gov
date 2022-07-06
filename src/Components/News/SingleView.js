@@ -3,14 +3,14 @@ import { QueryClient, QueryClientProvider, useQuery } from "react-query";
 import axios from "axios";
 
 
-export default function SingleView(props) {
+export default function SingleView(props) { //Props Not PAssed in tabs.js
     // const id  = props.id;
     console.log("The prio iddfgdfg is", props.id )
 
     const { isLoading, error, data, isFetching } = useQuery("repoData", () =>
         axios.get(
             // `http://localhost:8000/news/${props.id}`
-            `http://localhost:8000/news/3`
+            `http://localhost:8000/news/1`
         )
             .then((res) => res.data),
     );

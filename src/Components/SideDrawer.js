@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -13,7 +14,8 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
-import Tab from './Tabs'
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
 import {
   BrowserRouter as Router,
   Link
@@ -21,7 +23,30 @@ import {
 
 const drawerWidth = 240;
 
-export default function PermanentDrawerLeft({title}) {
+export default function SideDrawer({ header, fun }) { //Header Comes Directly From Diffrent Master Pages using Props
+
+  const [ulbid, setUlbid] = useState();
+  const [ulblabel, setUlblabel] = useState();
+
+  // react-dropdown
+  const options = [
+    // 'Ranchi', 'Dhanbad', 'Bokaro', 'Jamsedpur'
+    { value: 1, label: 'Ranchi' },
+    { value: 2, label: 'Dhanbad' },
+    { value: 3, label: 'Bokaro' },
+    { value: 4, label: 'Jamsedpur' }
+
+  ];
+  const defaultOption = options[1];
+
+  const drodownHandle = (e) => {
+    setUlbid(e.value)
+    setUlblabel(e.label)
+    fun(e)
+    // console.log("Clicked", e.value)
+  }
+
+  // react-dropdown End
 
   const itemsList = [
     {
@@ -56,7 +81,7 @@ export default function PermanentDrawerLeft({title}) {
         >
           <Toolbar>
             <Typography variant="h6" noWrap component="div">
-              {title}
+              {header} {ulblabel && "For"}  {ulblabel}
             </Typography>
           </Toolbar>
         </AppBar>
@@ -74,18 +99,15 @@ export default function PermanentDrawerLeft({title}) {
         >
           <Toolbar />
           <Divider />
-          {/* <List>
-          {['News Master', 'Event Master', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List> */}
+          <p className='bg-sky-200'>
+            <Dropdown
+              className='bg-sky-300'
+              options={options}
+              value={defaultOption}
+              // onload ={drodownHandle}
+              onChange={drodownHandle}
+              placeholder="Select ULB"
+            /></p>
           <Divider />
           <List>
             {itemsList.map((item, index) => {
@@ -101,18 +123,6 @@ export default function PermanentDrawerLeft({title}) {
             })}
           </List>
           <Divider />
-          {/* <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List> */}
         </Drawer>
         <Box
           component="main"
@@ -131,5 +141,5 @@ export default function PermanentDrawerLeft({title}) {
 
 /*
 Export To -
-1. App.js
+All Master Pages.. 
 */

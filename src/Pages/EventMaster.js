@@ -1,12 +1,20 @@
-import React from 'react'
+import React, {useState} from 'react'
 import SideDrawer from '../Components/SideDrawer'
 import Tab from '../Components/Tabs'
 
 export default function EventMaster() {
+
+  const [ulbinfo, setUlbinfo] = useState(1)
+
+  const getUlbID = (e) => {
+   console.log('EventMaster ',e.value, e.label)
+   setUlbinfo(e)
+  }
+
   return (
     <div>
-        <SideDrawer title="Event Master" />
-        <Tab title="Event" />
+        <SideDrawer fun={getUlbID} header="Event Master" />
+        <Tab ulbinfo={ulbinfo} title="Event" />
     </div>
   )
 }

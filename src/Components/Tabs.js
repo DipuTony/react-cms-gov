@@ -5,9 +5,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import AddNews from './News/AddNews';
-import FetchData from './News/FetchData';
 import SingleView from './News/SingleView';
-import ReactDataTable from './News/ReactDataTable';
 import ListTableParent from './ListTable/ListTableParent';
 import ReactModel from './Model/WorkflowList';
 
@@ -46,7 +44,7 @@ function a11yProps(index) {
   };
 }
 
-export default function BasicTabs({title}) {
+export default function BasicTabs({title, ulbinfo}) { //Title Comes Diretly From Diffrent Master Pages using Props
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -58,17 +56,17 @@ export default function BasicTabs({title}) {
       <Box sx={{ width: '100%' }}>
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
           <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-            <Tab label={`Add ${title}`} {...a11yProps(0)} />
-            <Tab label={`View ${title}`} {...a11yProps(1)} />
+            <Tab label={`Add ${title} ${ulbinfo.label}`} {...a11yProps(0)} />
+            <Tab label={`View ${title} ${ulbinfo.label}`} {...a11yProps(1)} />
             <Tab label="React Data Table" {...a11yProps(2)} />
           </Tabs>
         </Box>
         <TabPanel value={value} index={0}>
-          <AddNews title={`${title}`} />
+          <AddNews title={`${title}`} ulbid={`${ulbinfo.value}`}  ulblabel={`${ulbinfo.label}`} />
         </TabPanel>
         <TabPanel value={value} index={1}>
           <ReactModel title={`${title}`} />
-          <SingleView />
+          <SingleView />               {/* Props Not Passed */}
         </TabPanel>
         <TabPanel value={value} index={2}>
           {/* <ReactDataTable /> */}
@@ -81,5 +79,5 @@ export default function BasicTabs({title}) {
 
 /*
 Export To -
-1. EventMaster.js
+1. Master Pages
 */
