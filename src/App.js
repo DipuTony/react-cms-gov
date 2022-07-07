@@ -16,6 +16,7 @@ import NewsMaster from './Pages/NewsMaster';
 import ErrorPage from './Pages/ErrorPage';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ImageUpload from './Pages/ImageUpload';
 
 function App() {
   const queryClient = new QueryClient()
@@ -33,6 +34,7 @@ function App() {
             <Route path='/EventMaster' element={<EventMaster />} />
             <Route path='/NewsMaster' element={<NewsMaster />} />
             <Route path='/AnnouncementMaster' element={<AnnouncementMaster />} />
+            <Route path='/ImageUpload' element={<ImageUpload />} />
             <Route path='*' element={<ErrorPage />} />
             
           </Routes>

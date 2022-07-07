@@ -1,48 +1,42 @@
 {
+  "images": [
+    {
+      "filename": "C:\\fakepath\\unkwn.jpg",
+      "imgurl": "C:\\fakepath\\unkwn.jpg",
+      "date": "7th July 2022",
+      "id": 1
+    }
+  ],
   "news": [
     {
       "header": "Patna News",
-      "news": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo error modi delectus rerum qui explicabo ipsa quam. Fuga voluptas nostrum nobis quam vero accusantium expedita aspernatur corrupti officia doloremque odio delectus ratione, facilis nam, esse molestias quo? Accusantium consectetur odio magni optio minus, officia deserunt voluptatem saepe possimus cupiditate!",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo error modi delectus rerum qui explicabo delectus ratione, facilis nam, esse molestias quo? Accusantium consectetur odio magni optio minus, officia deserunt voluptatem saepe possimus cupiditate!",
       "date": "09/04/2022",
       "isArchived": 1,
       "ulbid": 1,
       "id": 1
     },
     {
-      "header": "fgfgfg",
-      "news": "<p>fdf</p>",
-      "date": "6th July 2022",
-      "isArchived": 1,
-      "ulbid": 2,
-      "id": 9
-    },
-    {
-      "header": "NEws Bokaro 3",
-      "news": "<p>NEws Bokaro 3NEws Bokaro 3</p>",
-      "date": "6th July 2022",
+      "header": "This is news Master",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo error modi delectus rerum qui explicabo delectus ratione, facilis nam, esse molestias quo? Accusantium consectetur odio magni optio minus, officia deserunt voluptatem saepe possimus cupiditate!",
+      "date": "7th July 2022",
       "isArchived": 0,
-      "ulbid": 3,
-      "id": 10
-    },
-    {
-      "header": "retert",
-      "news": "<p>er</p>",
-      "date": "6th July 2022",
+      "ulbid": null,
       "id": 11
     },
     {
-      "header": "trytry",
-      "news": "<p>rt</p>",
-      "date": "6th July 2022",
-      "isArchived": 0,
+      "header": "NEws with id",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo error modi delectus rerum qui explicabo delectus ratione, facilis nam, esse molestias quo? Accusantium consectetur odio magni optio minus, officia deserunt voluptatem saepe possimus cupiditate!",
+      "date": "7th July 2022",
+      "isArchived": 1,
       "ulbid": null,
-      "id": 12
+      "id": 13
     }
   ],
   "event": [
     {
       "header": "My First Event",
-      "news": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo error modi delectus rerum qui explicabo delectus ratione, facilis nam, esse molestias quo? Accusantium consectetur odio magni optio minus, officia deserunt voluptatem saepe possimus cupiditate!",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo error modi delectus rerum qui explicabo delectus ratione, facilis nam, esse molestias quo? Accusantium consectetur odio magni optio minus, officia deserunt voluptatem saepe possimus cupiditate!",
       "date": "09/04/2022",
       "isArchived": 0,
       "ulbid": 1,
@@ -50,7 +44,7 @@
     },
     {
       "header": "Event Dhanbad 2",
-      "news": "<p>Event Dhanbad 2Event Dhanbad 2</p>",
+      "body": "<p>Event Dhanbad 2Event Dhanbad 2</p>",
       "date": "6th July 2022",
       "isArchived": 1,
       "ulbid": 2,
@@ -58,7 +52,7 @@
     },
     {
       "header": "event",
-      "news": "<p>bort</p>",
+      "body": "<p>bort</p>",
       "date": "6th July 2022",
       "isArchived": 0,
       "ulbid": 2,
@@ -66,25 +60,51 @@
     },
     {
       "header": "event",
-      "news": "<p>bort</p>",
+      "body": "<p>bort</p>",
       "date": "6th July 2022",
       "isArchived": 0,
       "ulbid": 2,
       "id": 13
     },
     {
-      "header": "event",
-      "news": "<p>bort</p>",
-      "date": "6th July 2022",
+      "header": "dfg",
+      "body": "ioi",
+      "date": "7th July 2022",
       "isArchived": 0,
-      "ulbid": 2,
-      "id": 14
+      "ulbid": null,
+      "id": 15
+    },
+    {
+      "header": "dfg",
+      "body": "ioi",
+      "date": "7th July 2022",
+      "isArchived": 0,
+      "ulbid": null,
+      "id": 16
+    }
+  ],
+  "function": [
+    {
+      "header": "This is Function",
+      "body": "<p>Function Body 4</p>",
+      "date": "6th July 2022",
+      "isArchived": 1,
+      "ulbid": 4,
+      "id": 8
+    },
+    {
+      "header": "Gandhi jayanti",
+      "body": "Gandhi jayanti Body",
+      "date": "7th July 2022",
+      "isArchived": 1,
+      "ulbid": null,
+      "id": 11
     }
   ],
   "announcement": [
     {
       "header": "12",
-      "news": "<p>e</p>",
+      "body": "<p>e</p>",
       "date": "Today is a Monday",
       "isArchived": 0,
       "ulbid": 1,
@@ -92,11 +112,29 @@
     },
     {
       "header": "Announcement 4",
-      "news": "<p>Announcement 4</p>",
+      "body": "<p>Announcement 4</p>",
       "date": "6th July 2022",
       "isArchived": 1,
       "ulbid": 4,
       "id": 8
+    }
+  ],
+  "advertisement": [
+    {
+      "header": "This is advertisement",
+      "body": "<p>Announcement 4</p>",
+      "date": "6th July 2022",
+      "isArchived": 1,
+      "ulbid": 4,
+      "id": 8
+    },
+    {
+      "header": "this ads",
+      "body": "add body",
+      "date": "7th July 2022",
+      "isArchived": 1,
+      "ulbid": null,
+      "id": 10
     }
   ]
 }

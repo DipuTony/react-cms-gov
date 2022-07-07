@@ -45,7 +45,7 @@ function WorkflowList({ title }) {  //Title Comes From Diffrent Master Pages usi
             Cell: ({ cell }) => (
                 <button onClick={() => setTogleModalCount((prev) => prev + 1)} className='bg-sky-200 px-3 py-1 rounded-lg shadow-lg hover:shadow-xl hover:bg-sky-800 hover:text-white text-black'>
                     {/* View {cell.row.values.id} */}
-                    View
+                    Vieww
                 </button>
             )
         },
