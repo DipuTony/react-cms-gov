@@ -17,14 +17,63 @@
       "id": 1
     },
     {
+<<<<<<< HEAD
       "header": "NEws with id",
       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo error modi delectus rerum qui explicabo delectus ratione, facilis nam, esse molestias quo? Accusantium consectetur odio magni optio minus, officia deserunt voluptatem saepe possimus cupiditate!",
       "date": "7th July 2022",
+=======
+      "header": "This is news Master",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo error modi delectus rerum qui explicabo delectus ratione, facilis nam, esse molestias quo? Accusantium consectetur odio magni optio minus, officia deserunt voluptatem saepe possimus cupiditate!",
+      "date": "7th July 2022",
+      "isArchived": 0,
+      "ulbid": null,
+      "id": 11
+    },
+    {
+      "header": "NEws with id",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo error modi delectus rerum qui explicabo delectus ratione, facilis nam, esse molestias quo? Accusantium consectetur odio magni optio minus, officia deserunt voluptatem saepe possimus cupiditate!",
+      "date": "7th July 2022",
+      "isArchived": 1,
+      "ulbid": null,
+      "id": 13
+    }
+  ],
+  "event": [
+    {
+      "header": "My First Event",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo error modi delectus rerum qui explicabo delectus ratione, facilis nam, esse molestias quo? Accusantium consectetur odio magni optio minus, officia deserunt voluptatem saepe possimus cupiditate!",
+      "date": "09/04/2022",
+      "isArchived": 0,
+      "ulbid": 1,
+      "id": 3
+    },
+    {
+      "header": "Event Dhanbad 2",
+      "body": "<p>Event Dhanbad 2Event Dhanbad 2</p>",
+      "date": "6th July 2022",
+      "isArchived": 1,
+      "ulbid": 2,
+      "id": 11
+    },
+    {
+      "header": "event",
+      "body": "<p>bort</p>",
+      "date": "6th July 2022",
+      "isArchived": 0,
+      "ulbid": 2,
+      "id": 12
+    },
+    {
+      "header": "event",
+      "body": "<p>bort</p>",
+      "date": "6th July 2022",
+>>>>>>> ea1c97876483c0f5725359fc5c9686b4ca7601f7
       "isArchived": 0,
       "ulbid": 2,
       "id": 13
     },
     {
+<<<<<<< HEAD
       "header": "My heas",
       "body": "<p><strong>gfdgdfg</strong></p>",
       "date": "8th July 2022",
@@ -104,6 +153,13 @@
       "date": "7th July 2022",
       "isArchived": 1,
       "ulbid": 4,
+=======
+      "header": "dfg",
+      "body": "ioi",
+      "date": "7th July 2022",
+      "isArchived": 0,
+      "ulbid": null,
+>>>>>>> ea1c97876483c0f5725359fc5c9686b4ca7601f7
       "id": 15
     },
     {
@@ -111,7 +167,11 @@
       "body": "ioi",
       "date": "7th July 2022",
       "isArchived": 0,
+<<<<<<< HEAD
       "ulbid": 1,
+=======
+      "ulbid": null,
+>>>>>>> ea1c97876483c0f5725359fc5c9686b4ca7601f7
       "id": 16
     }
   ],
@@ -121,13 +181,18 @@
       "body": "<p>Function Body 4</p>",
       "date": "6th July 2022",
       "isArchived": 1,
+<<<<<<< HEAD
       "ulbid": 1,
+=======
+      "ulbid": 4,
+>>>>>>> ea1c97876483c0f5725359fc5c9686b4ca7601f7
       "id": 8
     },
     {
       "header": "Gandhi jayanti",
       "body": "Gandhi jayanti Body",
       "date": "7th July 2022",
+<<<<<<< HEAD
       "isArchived": 0,
       "ulbid": 2,
       "id": 11
@@ -147,6 +212,11 @@
       "isArchived": 0,
       "ulbid": 4,
       "id": 13
+=======
+      "isArchived": 1,
+      "ulbid": null,
+      "id": 11
+>>>>>>> ea1c97876483c0f5725359fc5c9686b4ca7601f7
     }
   ],
   "announcement": [
@@ -223,6 +293,24 @@
       "isArchived": 0,
       "ulbid": 4,
       "id": 13
+    }
+  ],
+  "advertisement": [
+    {
+      "header": "This is advertisement",
+      "body": "<p>Announcement 4</p>",
+      "date": "6th July 2022",
+      "isArchived": 1,
+      "ulbid": 4,
+      "id": 8
+    },
+    {
+      "header": "this ads",
+      "body": "add body",
+      "date": "7th July 2022",
+      "isArchived": 1,
+      "ulbid": null,
+      "id": 10
     }
   ]
 }
